@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.dev-note {
+    background: #ffcc00;
+    color: #222;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+nav {
+    background: #222;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #444;
+}
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+h1, h2 {
+    text-align: center;
+}
+.timeline {
+    border-left: 4px solid #333;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+.timeline-item {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.timeline-item.stream {
+    background: #e0f0ff;
+    border-left: 4px solid #3399ff;
+}
+.timeline-item.stream::before {
+    background: #3399ff;
+}
+.timeline-item.forum {
+    background: #fff4e0;
+    border-left: 4px solid #ff9900;
+}
+.timeline-item.forum::before {
+    background: #ff9900;
+}
+.timeline-item.death {
+    background: #ffe0e0;
+    border-left: 4px solid #ff3333;
+}
+.timeline-item.death::before {
+    background: #ff3333;
+}
+.timeline-item.care {
+    background: #e0ffe0;
+    border-left: 4px solid #33cc33;
+}
+.timeline-item.care::before {
+    background: #33cc33;
+}
+.timeline-item.retreat {
+    background: #f0f0f0;
+    border-left: 4px solid #999999;
+}
+.timeline-item.retreat::before {
+    background: #999999;
+}
+.timeline-item.warning {
+    background: #fffbe0;
+    border-left: 4px solid #ffcc00;
+}
+.timeline-item.warning::before {
+    background: #ffcc00;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.gallery img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+.sources {
+    margin-top: 2rem;
+    background: #eee;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.sources h3 {
+    text-align: center;
+}
+.sources ul {
+    list-style-type: decimal;
+    padding-left: 2rem;
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
